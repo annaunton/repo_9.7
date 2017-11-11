@@ -1,10 +1,17 @@
 // scripts.js
 
-var buttons = document.getElementsByClassName('button');
+var list = document.getElementById('list');
+var liCount = document.getElementsByTagName('li');
 
 
-for (var i=0; i <= buttons.length-1; i++) {
-	console.log(buttons[i].innerHTML);
-
+function addElement () {
+	var newElem = document.createElement('li');
+	newElem.innerHTML = 'item '+ liCount.length;
+	list.appendChild(newElem);
 }
 
+var button = document.getElementById('addElem');
+
+button.addEventListener('click',function(e) {
+	addElement ();
+});
