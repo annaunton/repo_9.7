@@ -13,9 +13,9 @@ function drawTree(height) {
 drawTree(height);
 
 
+/* Poniżej próbowałam zrobić według instrukcji z modułu, ale wyszły jakieś bzdury. Możesz zobaczyć, co jest źle? Po co wprowadzać dwie pętle? Co to daje?*/
 
 
-/* Według instrukcji  z modułu*/
 /*
  var height = prompt('Jak wysoką chcesz mieć w tym roku choinkę? Podaj liczbę poziomów.');
 
