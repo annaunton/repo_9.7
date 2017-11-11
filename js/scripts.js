@@ -1,21 +1,19 @@
 // scripts.js
 
-var triangleBase = prompt('Enter triangle base');
-var triangleHeight = prompt('Enter triangle height');
+var femaleNames = ['Ania','Ola','Kasia'];
+var maleNames = ['Piotrek','Józek','Dyzio'];
 
-function getTriangleArea(a,h) {
-	if (a <= 0 || h <= 0) {
-		console.log('Błędne dane');
+var allNames = femaleNames.concat(maleNames);
+console.log(allNames);
+
+var newName = prompt('Enter new name');
+
+var nameIndex = allNames.indexOf(newName);
+
+if (nameIndex == -1) {
+	allNames.push(newName);
+	console.log(allNames);
 	} else {
-		var result = a*h/2;
-		return result;	
+	console.log(newName +' is already in table. Select another name');
 	}
-}
 
-var triangle1Area = getTriangleArea(triangleBase,triangleHeight);
-var triangle2Area = getTriangleArea(8,5);
-var triangle3Area = getTriangleArea(100,0.5);
-
-console.log(triangle1Area);
-console.log(triangle2Area);
-console.log(triangle3Area);
